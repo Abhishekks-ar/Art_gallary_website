@@ -47,9 +47,9 @@
                 </div>
                 <li class="nav-item me-3">
                   <a
-                    class="nav-link active --bs-light-rgb"
+                    class="nav-link --bs-light-rgb"
                     aria-current="page"
-                    href="#"
+                    href="index.html"
                     ><h4>Home</h4></a
                   >
                 </li>
@@ -57,7 +57,9 @@
                   <a class="nav-link" href="gallery.html"><h4>Artistry</h4></a>
                 </li>
                 <li class="nav-item me-3">
-                  <a class="nav-link" href="contactus.html"><h4>Contact us</h4></a>
+                  <a class="nav-link active" href="contactus.html"
+                    ><h4>Contact us</h4></a
+                  >
                 </li>
 
                 <li class="nav-item me-3">
@@ -73,47 +75,31 @@
       </header>
     </div>
     <!-- main -->
-    <main class="main-content">
-      <!-- welcome -->
-      <div class="text-white mt-3">
-        <h4 class="left-right text-center">Welcome to The Art Loft </h4>
-          <p class="right-left ms-5 me-5">Step into a world of creativity and inspiration at our art gallery. Discover a diverse collection of masterpieces, from breathtaking abstract designs to timeless portraits. Explore our carefully curated categories and immerse yourself in the stories behind each creation. Whether you're an art enthusiast or a casual admirer, our gallery offers something for everyone. Don't miss the featured section showcasing popular works by renowned artists. Begin your artistic journey today and experience the magic of art like never before.</p>
-      </div>
-      <div class="bottom-top mt-5">
-        <h4 class="text-white text-center ">Editor's Picks</h4>
-      </div>
-      <div class="bottom-top-2 crs-home">
-        <!-- carousel -->
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images/Girl with a Pearl Earring.jpeg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/Nighthawks.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/Mona Lisa by Leonardo da Vinci.jpg" class="d-block w-100" alt="...">
-            </div>
+     <main class="main-content">
+      <div class="bottom-top contact-form container my-5">
+        <h2 class="text-center mb-4 mt-2">Contact Us</h2>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-        </div> 
-        <!-- explore button -->
-        <div class="bottom-top-2 mt-4  ">
-          <a href="gallery.html"><h4 class="text-center">Discover more</h4></a>
-        </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="subject" placeholder="Enter the subject" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary mb-2">Send Message</button>
+        </form>
       </div>
-
-    </main>
-
+      
+     </main>
 
     <!-- footer -->
     <footer class="bg-dark text-light py-3">

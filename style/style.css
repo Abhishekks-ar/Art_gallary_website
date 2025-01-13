@@ -1,16 +1,42 @@
 body {
   font-family: Merriweather;
 }
+.main-content {
+  padding-bottom: 60px; /* Matches footer height */
+}
 .nav-link {
   color: azure;
   font-size: large;
   font-weight: bold;
 }
 .nav-link:hover {
-  background-color: rgb(35, 215, 228);
+  /* background-color: rgb(35, 215, 228); */
+  background: radial-gradient(circle, #3aad00, #56e976);
   color: rgb(6, 11, 12);
   border-radius: 4px;
   border-color: rgb(245, 245, 245);
+}
+.dropdown-options a:hover {
+  background: radial-gradient(circle, #55d332, #050207);
+  color: #ffffff;
+}
+.logo {
+  margin-left: 15px;
+  height: 42px;
+  width: 42px;
+}
+.nav-pageheading {
+  position: absolute;
+  left: 80px; /* Adjust the value as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+  /* font-family: ; */
+  padding-top: 8px;
+}
+
+.navbar {
+  position: relative;
 }
 .bg-img {
   width: 100vw;
@@ -21,6 +47,14 @@ body {
   left: 0%;
   z-index: -1;
 }
+.crs-img {
+  height: 620px;
+  width: 100%;
+  object-fit: cover;
+}
+form.login {
+  border-radius: 10px;
+}
 .login-container {
   margin-top: 50px;
   margin-right: 50px;
@@ -30,7 +64,7 @@ body {
   /* padding-bottom: 1%; */
   /* height: 400px;
    */
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 .login {
   background-color: rgb(255, 255, 255);
@@ -41,16 +75,176 @@ body {
   text-decoration: none;
 }
 body {
-  background-color: rgba(26, 15, 131, 0.993);
+  /* background-color: goldenrod; */
+  background: radial-gradient(circle, #33eb05, #050207);
 }
 .login-pagechange {
   text-decoration: none;
 }
 .login-btn {
   border-radius: 8px;
-  border-color: blue;
+  border-color: rgb(9, 153, 4);
+  display: flex; /* Use Flexbox for alignment */
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Center content horizontally */
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.login-btn svg {
+  width: 1rem; /* Adjust icon size */
+  height: 1rem;
+  flex-shrink: 0; /* Prevent the icon from shrinking */
 }
 .login-btn:hover {
-  background-color: blue;
+  background: radial-gradient(circle, #33eb05, #050207);
+  /* background-color: blue; */
   color: azure;
+  transform: scale(1.01);
+}
+.contact-form {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+footer {
+  position: static;
+  bottom: 0;
+  width: 100%;
+}
+.footer-item a {
+  text-decoration: none;
+  color: azure;
+}
+/* home page */
+@keyframes hoverAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.01);
+  }
+  100% {
+    transform: scale(1.03);
+  }
+}
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.left-right {
+  animation-name: slideInLeft;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+
+  /* transform: translateX(-150px); */
+}
+@keyframes slideInRight {
+  from {
+    transform: translateX(300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.right-left {
+  animation-name: slideInRight;
+  animation-duration: 1.8s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+
+  /* transform: translateX(-150px); */
+}
+@keyframes slideToTop {
+  from {
+    transform: translateY(300px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.bottom-top {
+  animation-name: slideToTop;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+
+  /* transform: translateX(-150px); */
+}
+@keyframes slideToTop {
+  from {
+    transform: translateY(300px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.bottom-top-2 {
+  animation-name: slideToTop;
+  animation-duration: 2.4s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+
+  /* transform: translateX(-150px); */
+}
+.crs-home {
+  padding: 0px 50px 20px 50px;
+}
+.bottom-top-2 a {
+  text-decoration: none;
+  color: aliceblue;
+}
+/* gallery */
+.cards-gallery {
+  padding-top: 20px;
+  padding-right: 10%;
+  padding-bottom: 10%;
+  padding-left: 30%;
+  margin-left: 10%;
+} /*
+.cards-gallery-flex {
+  margin-left: auto;
+  margin-right: auto;
+} */
+.cards-btn {
+  border-radius: 8px;
+  border-width: 2px;
+  border-color: rgb(9, 153, 4);
+  display: flex; /* Use Flexbox for alignment */
+  align-items: center; /* Align items vertically */
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+.cards-btn:hover {
+  background: radial-gradient(circle, #33eb05, #050207);
+  /* background-color: blue; */
+  color: azure;
+  transform: scale(1.01);
 }
