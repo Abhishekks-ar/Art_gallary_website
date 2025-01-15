@@ -8,18 +8,22 @@ body {
   color: azure;
   font-size: large;
   font-weight: bold;
+  padding-top: 12px;
+}
+.nav-link.active {
+  color: rgb(187, 224, 62) !important; /* Replace with your desired color */
 }
 .nav-link:hover {
   /* background-color: rgb(35, 215, 228); */
-  background: radial-gradient(circle, #3aad00, #56e976);
-  color: rgb(6, 11, 12);
+  background: radial-gradient(circle, #3aad00, #11eb23);
+  color: rgb(224, 231, 233);
   border-radius: 4px;
   border-color: rgb(245, 245, 245);
 }
-.dropdown-options a:hover {
+/* .dropdown-options a:hover {
   background: radial-gradient(circle, #55d332, #050207);
   color: #ffffff;
-}
+} */
 .logo {
   margin-left: 15px;
   height: 42px;
@@ -47,6 +51,11 @@ body {
   left: 0%;
   z-index: -1;
 }
+/* .carousel img {
+  width: 800px; 
+  height: 900px;
+  object-fit: cover; 
+} */
 .crs-img {
   height: 620px;
   width: 100%;
@@ -70,6 +79,12 @@ form.login {
   background-color: rgb(255, 255, 255);
   padding: 5%;
   text-decoration: none;
+}
+.quote {
+  color: azure;
+  font-weight: bold;
+  font-size: xx-large;
+  font-family: "Courier New", Courier, monospace;
 }
 .login-password {
   text-decoration: none;
@@ -216,14 +231,14 @@ footer {
   text-decoration: none;
   color: aliceblue;
 }
-/* gallery */
+/* gallery 
 .cards-gallery {
   padding-top: 20px;
   padding-right: 10%;
   padding-bottom: 10%;
   padding-left: 30%;
   margin-left: 10%;
-} /*
+} 
 .cards-gallery-flex {
   margin-left: auto;
   margin-right: auto;
@@ -247,4 +262,28 @@ footer {
   /* background-color: blue; */
   color: azure;
   transform: scale(1.01);
+}
+.cards-gallery-anim {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: scale(1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cards-gallery-anim:hover {
+  transform: scale(1.05); /* Slightly enlarge the card */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increase shadow */
+}
+
+/* art */
+.art-bg {
+  background-color: rgb(212, 228, 157);
+}
+.art-border {
+  border-color: #3aad00;
+  border: 2px dotted;
+}
+.gal-img {
+  width: 225px;
+  height: 225px;
+  object-fit: cover; /* Ensures the image maintains its aspect ratio while covering the given dimensions */
 }
