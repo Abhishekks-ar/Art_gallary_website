@@ -228,6 +228,16 @@ footer {
   height: 800px;
   width: 90%;
 }
+@media (max-width: 767px) {
+  .crs-img {
+    height: 500px;
+    width: 100%;
+  }
+  .crs-home {
+    padding: 10px 10px 20px 10px;
+    margin: 10px 10px 20px 10px;
+  }
+}
 .bottom-top-2 a {
   text-decoration: none;
   color: aliceblue;
