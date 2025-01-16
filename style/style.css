@@ -51,16 +51,12 @@ body {
   left: 0%;
   z-index: -1;
 }
-/* .carousel img {
-  width: 800px; 
-  height: 900px;
-  object-fit: cover; 
-} */
-.crs-img {
+
+/* .crs-img {
   height: 620px;
   width: 100%;
   object-fit: cover;
-}
+} */
 form.login {
   border-radius: 10px;
 }
@@ -225,7 +221,12 @@ footer {
   /* transform: translateX(-150px); */
 }
 .crs-home {
-  padding: 0px 50px 20px 50px;
+  padding: 10px 50px 20px 50px;
+  margin: 10px 100px 20px 100px;
+}
+.crs-img {
+  height: 800px;
+  width: 90%;
 }
 .bottom-top-2 a {
   text-decoration: none;
